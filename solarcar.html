@@ -37,7 +37,7 @@
                 <li class="navbar_item">
                     <a href="Projects.html" class="navbar_links"> Experience </a>
                 </li>
-                <li class="navbar_btn"><a href ="ta.html" class="button">Contact</a> </li>
+                <!--<li class="navbar_btn"><a href ="ta.html" class="button">Contact</a> </li> -->
             </ul>
         </div>
 
@@ -49,8 +49,8 @@
         <div class="main_content">
             <h1>Solar Car Project</h1>
             <h2>Electrical Team Lead</h2>
-            <p2>Overall, the McMaster Solar Car team has been the key reason of my engineerin passion. I have learned about many electrical engineering
-                concepts. Specifically with power electronics, PCB production, battery pack production/design, circuit design, and much more. I have also 
+            <p2>Overall, the McMaster Solar Car team has been the key reason of my engineering passion. I have learned about many electrical engineering
+                concepts. Specifically with power electronics, Printed Circuit Board production, battery pack production/design, circuit design, and much more. I have also 
                 taken into consideration many design constraints and as a result have redesigned the board to be the best possible. 
 
                 Originally this project had started off slowly for me as I was trying to adapt to the university environment, however, in 2022 I had 
@@ -167,11 +167,18 @@
           <div class="container left">
             <div class="content">
               <h2>Electrical Lead - August 2022</h2>
-                <p>Finished producing the primary iteration of the Precharge circuit PCB. Precharge circuit essentially ensures that the capacitors when initially uncharged do not produce a short circuit damaging the internal circuitry of the motor controller. Precharge was seperated from the power management board to ensure that if the board does fail, the entire power management board does not need to be replaced.</p>
+                <p>Finished producing the primary iteration of the Precharge circuit printed circuit board.
+                  Precharge circuit essentially ensures that the capacitors when initially uncharged do not produce a short circuit damaging the internal circuitry of the motor controller. 
+                  Precharge was seperated from the power management board to ensure that if the board does fail, 
+                  the entire power management board does not need to be replaced. 
+                  This was a major design choice because traditionally the precharge and the power management board were one. However, because 
+                  this is the board that is the most prone to failure and due to the electromagnetic interference from the contactors and relays 
+                  it was decided to keep it further away from the processing unit as much as possible. 
+                </p>
             <div class="main_img-container">
                     <img src="assets/images/pic12.png" alt="pic" id="main_img3">
                 </div>
-                <div class="caption">Figure 5 - Precharge PCB Board (Iteration 1)</div>
+                <div class="caption">Figure 5 - Precharge Printed Circuit Board (Iteration 1)</div>
         </div>
           </div>
 
@@ -179,7 +186,9 @@
           <div class="container right">
             <div class="content">
               <h2>Electrical Lead - August 2022</h2>
-              <p>Solar cell arrangement was decided. Each array section requires a maximum power point tracker to ensure that each module produces maximum efficiency. Each array region was selected to minimize angle differentials and shading from vehicle components.</p>
+              <p>Solar cell arrangement was decided. Each array section requires a maximum power point tracker to ensure 
+                that each module produces maximum efficiency. Each array region was selected to minimize angle differentials
+                 and shading from vehicle components.</p>
               <div class="pdf_file">
               <embed src=
               "assets/images/Solar Array Sections.pdf" 
@@ -268,6 +277,7 @@
                     <a href="/" id="footer_logo"><i class="fas fa-battery-full"></i>Kavish</a> 
                 </div>
                 <p class="website_rights">&copy Kavish Wadehra 2023. Some rights reserved.</p>
+                <p>Fun fact: This website was made from raw CSS and HTML and took around 2000 lines of code!</p>
                 <div class="social_icons">
                     <a href="https://www.linkedin.com/in/kavish-wadehra" class="social_icon-link" target="_blank">
                         <i class="fab fa-linkedin"></i>
