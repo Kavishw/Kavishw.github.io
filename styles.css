@@ -241,6 +241,17 @@
     -moz-text-fill-color: transparent;
  }
 
+ .main_content h3{
+   font-size: 2rem;
+   background-color: #ff18b6;
+   background-image: linear-gradient(to top, #b721ff 0%, #21d4fd 100%);
+   background-size: 100%;
+   -webkit-background-clip: text;
+   -moz-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   -moz-text-fill-color: transparent;
+}
+
  .main_content p{
     margin-top: 1rem;
     font-size: 2rem;
@@ -421,6 +432,10 @@
         font-size: 3rem;
     }
 
+    .main_content h3{
+      font-size: 2rem;
+  }
+
     .main_content p {
         margin-top: 1rem;
         font-size: 1.2rem;
@@ -439,6 +454,9 @@
             font-size: 2rem;
         }
     
+        .main_content h3{
+         font-size: 1.5rem;
+     }
         .main_content p {
             margin-top: 2rem;
             font-size: 1.5rem;
