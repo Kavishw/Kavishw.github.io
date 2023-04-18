@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kavish Wadehra</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" 
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" 
+    crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Roboto+Mono:wght@400;500&display=swap" 
+    rel="stylesheet">
+
+</head>
+<body>
+    <!-- Navigation bar section-->
+    <nav class="navbar">
+        <div class="navbar_container">
+            <a href="/" id="navbar_logo"><i class="fa fa-battery-full"></i>KAVISH</a>
+            <div class="navbar_toggle" id="mobile-menu">
+                <span class="bar"></span> <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar_menu">
+                <li class="navbar_item">
+                    <a href="index.html" class="navbar_links"> Home </a>
+                </li>
+                <li class="navbar_item">
+                    <a href="Aboutme.html" class="navbar_links"> About </a>
+                </li>
+                <li class="navbar_item">
+                    <a href="Resume.html" class="navbar_links"> Resume </a>
+                </li>
+                <li class="navbar_item">
+                    <a href="Projects.html" class="navbar_links"> Experience </a>
+                </li>
+                <!--<li class="navbar_btn"><a href ="ta.html" class="button">Contact</a> </li>-->
+            </ul>
+        </div>
+
+    </nav>
+<!-- Hero section-->
+<div class="main">
+    <div class="main_container">
+        <div class="main_content">
+            <h1>HV Architecture</h1>
+            <h2> Overview</h2>
+            <p1> The high voltage architecture is the heart of the vehicle, responsible for ensuring
+                 how things get powered, how things start up and shut down, and the correct management
+                  and distribution of power. It takes into account regenerative braking and where that
+                   power goes, as well as the two primary power sources: the supplementary battery and
+                    the main battery. Proper design and implementation of the high voltage architecture
+                     is critical for the safe and efficient operation of the vehicle. </p1>
+            <p1></p1>
+   </div>
+        <div class="main_img-container">
+            <img src="assets/images/pic37.png" alt="pic" id="main_img1">
+        </div>
+        <div class="main_content">
+            <h2>Design Process</h2>
+            <h3>Iteration 0</h3>
+            <p1>The primary iteration of the electrical architecture provided a foundation for further
+                 development, but it had several limitations. The design did not take into account the
+                  start-up phase and detailed diagram of how the vehicle would start up and shut down.
+                   Additionally, it did not consider the convenience of the driver, as there were multiple 
+                   switches to turn on the entire vehicle. Furthermore, the initial design
+                     only had one motor controller instead of two and did not include an E-stop. 
+                     Despite these drawbacks, the primary iteration gave the team a solid starting
+                     point and an understanding of the placement of components in the electrical 
+                     architecture. </p1>
+            
+        </div>
+        <div class="main_img-container">
+            <img src="assets/images/pic39.png" alt="pic" id="main_img1">
+        </div>
+
+        <div class="main_content">
+            <h3>Iteration 1</h3>
+            <p1>Grigor and I worked on the second iteration of the electrical architecture, 
+                where we focused on having only one start button. Using normal vehicles as an inspiration, the MCU 
+                constantly powered on like a normal vehicle, it would only be powered when 
+                necessary to receive the "on" signal from the driver. However, this approach 
+                drained the supplementary battery quickly and was not feasible for prolonged periods.
+                 The HV line was initially powered at 110 volts, providing the DCDC converter with a 
+                 nominal input. However, this was later changed to 96V to allow the motor controller
+                  to have a nominal voltage input. In this iteration, the grounding was done through
+                   the chassis, which is not ideal for EV vehicles, as everything should have a
+                    floating ground. There were two grounds in this version, which is also not ideal.
+                     Although this iteration had its shortcomings, it provided us with a better
+                      understanding of what needed to be changed and improved in the subsequent 
+                      iterations.</p1>
+            
+        </div>
+        <div class="main_img-container">
+            <img src="assets/images/pic38.png" alt="pic" id="main_img1">
+        </div>
+
+        <div class="main_content">
+            <h3>Iteration 2 (Current)</h3>
+            <p1>This iteration of the electrical architecture for the vehicle complies with 
+                regulations and ensures the main power consumption comes from the two motor
+                 controllers. To stabilize power, two precharge circuits are attached to the 
+                 motor controllers. The team had to take into consideration circuit isolation by 
+                 using a relay and Mosfet configuration in the power management board. They also 
+                 had to ensure the microcontroller on the power management board wouldn't face a
+                  power blip by adding capacitors. Additionally, a normally closed relay was added
+                   to ensure the supplementary battery would always remain connected in an "off state" 
+                   and a normally open relay was added to ensure the primary battery would only be
+                    connected when prompted to. The electrical architecture also includes an HV switch 
+                    and an E-stop switch. Currently, the team is working on the firmware side of
+                     things, specifically enabling the MPPT contactor to also be normally closed. 
+                     This design does meet ASC standards as of 2024.</p1>
+            
+        </div>
+        <div class="main_img-container">
+            <img src="assets/images/pic37.png" alt="pic" id="main_img1">
+        </div>
+    </div>
+
+
+
+    </div>
+</body>
+</html>

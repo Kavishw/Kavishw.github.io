@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kavish Wadehra</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" 
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" 
+    crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Roboto+Mono:wght@400;500&display=swap" 
+    rel="stylesheet">
+
+</head>
+<body>
+    <!-- Navigation bar section-->
+    <nav class="navbar">
+        <div class="navbar_container">
+            <a href="/" id="navbar_logo"><i class="fa fa-battery-full"></i>KAVISH</a>
+            <div class="navbar_toggle" id="mobile-menu">
+                <span class="bar"></span> <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar_menu">
+                <li class="navbar_item">
+                    <a href="index.html" class="navbar_links"> Home </a>
+                </li>
+                <li class="navbar_item">
+                    <a href="Aboutme.html" class="navbar_links"> About </a>
+                </li>
+                <li class="navbar_item">
+                    <a href="Resume.html" class="navbar_links"> Resume </a>
+                </li>
+                <li class="navbar_item">
+                    <a href="Projects.html" class="navbar_links"> Experience </a>
+                </li>
+                <!--<li class="navbar_btn"><a href ="ta.html" class="button">Contact</a> </li>-->
+            </ul>
+        </div>
+
+    </nav>
+<!-- Hero section-->
+<div class="main">
+    <div class="main_container">
+        <div class="main_content">
+            <h1>Precharge Circuit</h1>
+            <h2> Overview</h2>
+            <p1>Precharge circuits are an effective means of preventing stress and damage to electrical systems. 
+                They are typically used in electric vehicles, battery management systems, 
+                or any loads that have large amounts of capacitance. 
+                Capacitive loads require precharge circuits because the uncharged capacitors can produce 
+                a short that results in an unlimited inrush of current, which can cause damage to other components 
+                of the electrical system. A precharge circuit utilizes a very simple system involving a high wattage 
+                resistor and a switch. Its function is to initially limit the current, allowing the capacitors in the device to 
+                charge up, and then switch to a short, preventing further damage to the system. The image here illustrates the precharge
+                 circuit's operation.  </p1>
+            <p1>contactors are shown instead of switches. 
+                This is because precharge circuits require both a negative and a positive contactor to 
+                ensure safety and greater control. Contactors are used instead of normal relays as they 
+                support higher voltages and currents. The contactors are designed using peripheral circuitry,
+                 which is the main focus of this board. By using contactors instead of switches, the precharge 
+                 circuit can be actuated and controlled more precisely, providing a safer and more effective means
+                  of preventing damage to the electrical system.</p1>
+   </div>
+        <div class="main_img-container">
+            <img src="assets/images/pic29.png" alt="pic" id="main_img1">
+        </div>
+        <div class="main_content">
+            <h2>Schematic Design</h2>
+            <h3>Comparator Actuation</h3>
+            <p1>Our team drew inspiration from Mr. Salih's design,
+                 an experienced electrical lead and manager whose work
+                  can be found at: https://www.behance.net/salihm/projects.
+                   His design utilized a comparator paired with an RC circuit 
+                   to create a timing effect, allowing the contactor to close on
+                    the high wattage resistor switch side for a set duration before
+                     switching to the positive contactor side. While this design served its
+                      purpose for some time, it was not ideal for our team's needs as we required more control over 
+                      the specific contactors, including the addition of a negative contactor for safety reasons.  </p1>
+   </div>
+        <div class="main_img-container">
+            <img src="assets/images/pic30.png" alt="pic" id="main_img1">
+        </div>
+
+        <div class="main_content">
+            <h3>Transistor Actuation</h3>
+            <p1>Our team developed a two-MOSFET actuation system that is
+                 controllable via a microcontroller. The system comprises of a logic level 
+                 MOSFET for interfacing with the microcontroller and a power MOSFET for directing 
+                 a maximum of 100 mA current for the contactor coil control. The circuit design was 
+                 simulated and validated using multisim, as shown in the documentation. However, we encountered 
+                 issues with circuit isolation since the circuit lacked an adequate buffer for isolating the coil 
+                 side of the contactor and the MCU. As a result, we had to explore other approaches to address this
+                  limitation. </p1>
+   </div>
+        <div class="main_img-container">
+            <img src="assets/images/pic31.png" alt="pic" id="main_img1">
+        </div>
+
+
+
+
+        <div class="main_content">
+            <h3>Transistor - Relay Actuation</h3>
+            <p1> Finally, the ultimate configuration employed an n-type power MOSFET as a grounding source while connected to the relay,
+                 providing adequate circuit isolation. This design was utilised in the final iteration for the power management board and the precharge circuit. 
+                 Furthermore this design was validated by the ASC judge as per the 2024 regulations. 
+                 The design is depicted here.</p1>
+   </div>
+        <div class="main_img-container">
+            <img src="assets/images/pic32.png" alt="pic" id="main_img1">
+        </div>
+
+        <div class="main_content">
+            <h2>PCB Design</h2>
+            <h3>Design Considerations</h3>
+            <p1> In order to accommodate for the heat produced from the current on the precharge relay side,
+                 which can support up to 90V and a maximum of 25 amps, our team opted to utilize polygon and
+                  power planes instead of normal routing. This design decision allowed for an entire plane to
+                   distribute power off of, providing better circuit isolation and heat dissipation. Additionally, we 
+                   utilized an entire grounding plane for better signal integrity. To prevent accidents, we selected
+                    components with a 1.5x higher rating than expected for the board.</p1>
+   </div>
+        <div class="main_img-container">
+            <img src="assets/images/pic33.png" alt="pic" id="main_img1">
+        </div>
+
+        <div class="main_content">
+            <h2>Final PCB Product</h2>
+            <p1> After over 20+ iterations and hard work, the final board is shown here.</p1>
+   </div>
+        <div class="main_img-container">
+            <img src="assets/images/pic20.png" alt="pic" id="main_img1">
+        </div>
+
+    </div>
+
+
+
+    </div>
+</body>
+</html>

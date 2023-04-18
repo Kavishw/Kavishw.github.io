@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kavish Wadehra</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" 
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" 
+    crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Roboto+Mono:wght@400;500&display=swap" 
+    rel="stylesheet">
+
+</head>
+<body>
+    <!-- Navigation bar section-->
+    <nav class="navbar">
+        <div class="navbar_container">
+            <a href="/" id="navbar_logo"><i class="fa fa-battery-full"></i>KAVISH</a>
+            <div class="navbar_toggle" id="mobile-menu">
+                <span class="bar"></span> <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar_menu">
+                <li class="navbar_item">
+                    <a href="index.html" class="navbar_links"> Home </a>
+                </li>
+                <li class="navbar_item">
+                    <a href="Aboutme.html" class="navbar_links"> About </a>
+                </li>
+                <li class="navbar_item">
+                    <a href="Resume.html" class="navbar_links"> Resume </a>
+                </li>
+                <li class="navbar_item">
+                    <a href="Projects.html" class="navbar_links"> Experience </a>
+                </li>
+                <!--<li class="navbar_btn"><a href ="ta.html" class="button">Contact</a> </li>-->
+            </ul>
+        </div>
+
+    </nav>
+<!-- Hero section-->
+<div class="main">
+    <div class="main_container">
+        <div class="main_content">
+            <h1>Power Management</h1>
+            <h2> Overview</h2>
+            <p1> The power management system (PMS) of the vehicle is designed to be seamlessly 
+                integrated with the high-voltage (HV) architecture of the vehicle. 
+                The PMS serves the purpose of distributing power to all the low voltage
+                 components of the vehicle from two sources, which are the supplementary 
+                 12V battery and the main battery's power from the DCDC buck converter. In order
+                  to ensure that the designs are up to regulation standards, the PMS is designed 
+                  to work in compliance with circuit isolation. The PMS is separated into three 
+                  components: BMI, ATI, and AMI, which are responsible for supporting battery main
+                   items, auxiliary temporary items, and auxiliary main items respectively. 
+                   The propulsionary power supporting components are on the BMI side, while
+                    components that switch power supplies are on the ATI side. The AMI side is 
+                    reserved for auxiliary components such as the horn or powering switches/contactors. 
+                    The power distribution, start-up, shut down, and emergency stop to the entire vehicle 
+                    are all controlled by the MCU, PIC18F46K80. </p1>
+            <p1></p1>
+   </div>
+        <div class="main_img-container">
+            <img src="assets/images/pic21.png" alt="pic" id="main_img1">
+        </div>
+        <div class="main_content">
+            <h2>Boards Powered</h2>
+            <h3>Data Acquisition</h3>
+            <p1> Collects data from CANBUS communications. </p1>
+            <h3>Driver Display</h3>
+            <p1>Shows driver important alerts as per regulations. </p1>
+            <h3>Low Voltage Board</h3>
+            <p1>Powers the lights on the vehicle.</p1>
+            <h3>Latching circuit</h3>
+            <p1>Enables startup when push button is pressed.</p1>
+            <h3>Precharge</h3>
+            <p1>Safe power transfer to the motor controller.</p1>
+            <h3>BMS</h3>
+            <p1>Monitors battery health and safety.</p1>
+        </div>
+        <div class="main_img-container">
+            <img src="" alt="" id="">
+        </div>
+
+        <div class="main_content">
+            <h2>Original Design</h2>
+            <p1> When I first joined the team, the design was already in place, and I only made slight modifications. 
+                However, the design had several issues such as incorrect component placement, no polygon pours,
+                 and incorrect trace thicknesses. Additionally, it did not account for power blips when
+                  transferring power sources, start-up and shut down behavior. It was designed using the
+                   autoroute rather than manual routing. Due to these issues, Grigor and I had to completely
+                    redesign the board and we had to step up to ensure the 
+                    board was up to standard.</p1>
+   </div>
+        <div class="main_img-container">
+            <img src="assets/images/pic36.png" alt="pic" id="main_img1">
+        </div>
+
+
+        <div class="main_content">
+            <h2>PCB Design</h2>
+            <h3>Design Considerations</h3>
+            <p1> To minimize the cost of the board, standard 1-ounce copper fills were utilized rather
+                 than 2 fills. A two-layer board was chosen to simplify and minimize the cost of the
+                  board. Polygon pours were also utilized to optimize power delivery to each component.
+                   Component placement on the PCB was condensed to ensure that it is thermally efficient
+                   , and heatsinks were added to important components such as MOSFETS. 
+                   Components were also chosen to have around 1.5 times higher thermal and electrical 
+                   characteristics than the expected requirements to ensure reliable operation.
+                Note that majority of these design considerations were performed from the several high voltage architecture redesigns.</p1>
+   </div>
+        <div class="main_img-container">
+            <img src="assets/images/pic35.png" alt="pic" id="main_img1">
+        </div>
+
+    </div>
+
+
+
+    </div>
+</body>
+</html>
