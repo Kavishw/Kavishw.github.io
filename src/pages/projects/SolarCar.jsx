@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Header from "../../../components/Header";
 
 const solarCarImages = [
   "/Images/Landing_Page/Im1.png",
@@ -22,43 +23,7 @@ const solarCarImages = [
   "/Images/Landing_Page/Im20.jpg",
 ];
 
-function Header() {
-  return (
-    <nav className="navbar">
-      <Link to="/" className="logo" aria-label="Kavish Wadehra home">
-        KW
-      </Link>
 
-      <div className="nav-links">
-        <Link to="/#education">Education</Link>
-
-        <div className="nav-dropdown">
-<Link to="/#experience">Experience</Link>
-
-        </div>
-
-        <div className="nav-dropdown">
-          <Link to="/#projects" className="dropdown-trigger">
-            Projects
-          </Link>
-
-          <div className="dropdown-menu">
-            <Link to="/#battery-workforce">Battery Workforce Challenge Project</Link>
-            <Link to="/projects/solar-car">McMaster Solar Car Project</Link>
-          </div>
-        </div>
-
-        <Link to="/publications">Publications</Link>
-
-        <a href="/Kavish_Wadehra_Resume.pdf" target="_blank" rel="noreferrer">
-          Resume
-        </a>
-
-        <Link to="/#contact">Contact</Link>
-      </div>
-    </nav>
-  );
-}
 
 function SolarCar() {
   return (

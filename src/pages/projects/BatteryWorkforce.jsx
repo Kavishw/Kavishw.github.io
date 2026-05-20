@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Header from "../../../components/Header";
 
 const bwcImages = [
   "/Images/Landing_Page_BWC/Im1.jpg",
@@ -22,26 +23,7 @@ const bwcImages = [
   "/Images/Landing_Page_BWC/Im19.JPG",
 ];
 
-function Header() {
-  return (
-    <nav className="navbar">
-      <Link to="/" className="logo">
-        KW
-      </Link>
 
-      <div className="nav-links">
-        <Link to="/#education">Education</Link>
-        <Link to="/#experience">Experience</Link>
-        <Link to="/#projects">Projects</Link>
-        <Link to="/publications">Publications</Link>
-
-        <a href="/Kavish_Wadehra_Resume.pdf" target="_blank" rel="noreferrer">
-          Resume
-        </a>
-      </div>
-    </nav>
-  );
-}
 
 function BatteryWorkforce() {
   return (

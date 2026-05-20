@@ -1,29 +1,11 @@
 import { Link } from "react-router-dom";
+import Header from "../../../components/Header";
 
 const dcdcImages = [
   "/Images/DCDC_Converter_Module/Pedal_Control_V2.png",
   "/Images/DCDC_Converter_Module/Pedal_Control_V2_1.png",
 ];
 
-function Header() {
-  return (
-    <nav className="navbar">
-      <Link to="/" className="logo" aria-label="Kavish Wadehra home">
-        KW
-      </Link>
-
-      <div className="nav-links">
-        <Link to="/#education">Education</Link>
-        <Link to="/projects/solar-car">Solar Car</Link>
-        <Link to="/publications">Publications</Link>
-
-        <a href="/Kavish_Wadehra_Resume.pdf" target="_blank" rel="noreferrer">
-          Resume
-        </a>
-      </div>
-    </nav>
-  );
-}
 
 function DCDCConverter() {
   return (

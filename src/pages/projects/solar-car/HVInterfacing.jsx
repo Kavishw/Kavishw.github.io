@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Header from "../../../components/Header";
 
 const hvImages = [
   {
@@ -49,25 +50,6 @@ const hvVideos = [
   "/Images/HV_Interfacing/Pedal_test.mp4",
 ];
 
-function Header() {
-  return (
-    <nav className="navbar">
-      <Link to="/" className="logo" aria-label="Kavish Wadehra home">
-        KW
-      </Link>
-
-      <div className="nav-links">
-        <Link to="/#education">Education</Link>
-        <Link to="/projects/solar-car">Solar Car</Link>
-        <Link to="/publications">Publications</Link>
-
-        <a href="/Kavish_Wadehra_Resume.pdf" target="_blank" rel="noreferrer">
-          Resume
-        </a>
-      </div>
-    </nav>
-  );
-}
 
 function HVInterfacing() {
   return (

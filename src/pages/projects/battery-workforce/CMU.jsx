@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Header from "../../../components/Header";
 
 const cmuImages = [
   "/Images/CMU/F1.png",
@@ -13,26 +14,6 @@ const cmuImages = [
   "/Images/CMU/V2_1.png",
 ];
 
-function Header() {
-  return (
-    <nav className="navbar">
-      <Link to="/" className="logo">
-        KW
-      </Link>
-
-      <div className="nav-links">
-        <Link to="/#education">Education</Link>
-        <Link to="/#experience">Experience</Link>
-        <Link to="/projects/battery-workforce">Battery Workforce</Link>
-        <Link to="/publications">Publications</Link>
-
-        <a href="/Kavish_Wadehra_Resume.pdf" target="_blank" rel="noreferrer">
-          Resume
-        </a>
-      </div>
-    </nav>
-  );
-}
 
 function CMU() {
   return (

@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Header from "../../../components/Header";
 
 const heatIntegrationImages = [
   "/Images/Heat Integration Sensor System/HISS_V1.png",
@@ -16,26 +17,7 @@ const heatIntegrationImages = [
   "/Images/Heat Integration Sensor System/HISS_V7_1.png",
 ];
 
-function Header() {
-  return (
-    <nav className="navbar">
-      <Link to="/" className="logo">
-        KW
-      </Link>
 
-      <div className="nav-links">
-        <Link to="/#education">Education</Link>
-        <Link to="/#experience">Experience</Link>
-        <Link to="/projects/battery-workforce">Battery Workforce</Link>
-        <Link to="/publications">Publications</Link>
-
-        <a href="/Kavish_Wadehra_Resume.pdf" target="_blank" rel="noreferrer">
-          Resume
-        </a>
-      </div>
-    </nav>
-  );
-}
 
 function HeatIntegration() {
   return (
