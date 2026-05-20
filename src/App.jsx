@@ -79,23 +79,18 @@ function Header() {
         KW
       </Link>
 
+      <input type="checkbox" id="mobile-menu-toggle" className="mobile-menu-toggle" />
+
+      <label htmlFor="mobile-menu-toggle" className="mobile-menu-button">
+        ☰
+      </label>
+
       <div className="nav-links">
         <Link to="/#education">Education</Link>
+        <Link to="/#experience">Experience</Link>
 
-<Link to="/#experience">Experience</Link>
-
-        <div className="nav-dropdown">
-          <Link to="/#projects" className="dropdown-trigger">
-            Projects
-          </Link>
-
-          <div className="dropdown-menu">
-            <Link to="/projects/battery-workforce">
-  Battery Workforce Challenge
-</Link>
-            <Link to="/projects/solar-car">McMaster Solar Car Project</Link>
-          </div>
-        </div>
+        <Link to="/projects/battery-workforce">Battery Workforce</Link>
+        <Link to="/projects/solar-car">Solar Car</Link>
 
         <Link to="/publications">Publications</Link>
 

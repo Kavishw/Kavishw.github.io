@@ -1209,61 +1209,76 @@ a {
 }
 
 /* Mobile */
-
-/* Mobile */
-
 @media (max-width: 700px) {
   .navbar {
-    flex-direction: column;
-    gap: 18px;
+    position: relative;
+    flex-direction: row;
     align-items: center;
-    padding: 28px 0 18px;
+    justify-content: space-between;
+    padding: 24px 0;
+  }
+
+  .mobile-menu-toggle {
+    display: none;
+  }
+
+  .mobile-menu-button {
+    display: grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 14px;
+    color: #ff8a4c;
+    font-size: 28px;
+    font-weight: 900;
+    background: rgba(255, 255, 255, 0.045);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    cursor: pointer;
   }
 
   .nav-links {
+    position: absolute;
+    top: 78px;
+    right: 0;
+    width: min(280px, calc(100vw - 40px));
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 14px;
+    border-radius: 22px;
+    background:
+      linear-gradient(145deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.035)),
+      #111111;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 26px 80px rgba(0, 0, 0, 0.45);
+    z-index: 100;
+  }
+
+  .mobile-menu-toggle:checked ~ .nav-links {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 14px 22px;
-    font-size: 13px;
-    max-width: 360px;
-    margin: 0 auto;
   }
 
-  .nav-dropdown:hover .dropdown-menu {
-    display: flex !important;
-    opacity: 1 !important;
-    visibility: visible !important;
+  .nav-links a {
+    padding: 13px 14px;
+    border-radius: 14px;
+    color: #d6d6d6;
+    font-size: 14px;
   }
 
-  .nav-dropdown {
-    display: flex;
-    position: static;
+  .nav-links a:hover {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.07);
   }
 
+  .nav-links > a::after {
+    display: none;
+  }
+
+  .nav-dropdown,
+  .dropdown-menu,
   .dropdown-trigger {
-    display: inline-block;
-  }
-  .dropdown-menu {
-    position: static;
-    display: flex !important;
-    opacity: 1 !important;
-    visibility: visible !important;
-    pointer-events: auto !important;
-    transform: none;
-    background: transparent;
-    border: none;
-    box-shadow: none;
-    padding: 0;
-    gap: 14px;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .nav-links > a,
-  .dropdown-trigger {
-    white-space: nowrap;
+    display: none;
   }
 
   .hero {
