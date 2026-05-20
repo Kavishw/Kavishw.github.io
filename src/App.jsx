@@ -82,10 +82,7 @@ function Header() {
       <div className="nav-links">
         <Link to="/#education">Education</Link>
 
-        <div className="nav-dropdown">
 <Link to="/#experience">Experience</Link>
-
-        </div>
 
         <div className="nav-dropdown">
           <Link to="/#projects" className="dropdown-trigger">
