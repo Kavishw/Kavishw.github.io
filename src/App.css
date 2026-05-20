@@ -1209,6 +1209,10 @@ a {
 }
 
 /* Mobile */
+.mobile-menu-toggle,
+.mobile-menu-button {
+  display: none;
+}
 @media (max-width: 700px) {
   .navbar {
     position: relative;
