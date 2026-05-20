@@ -1231,13 +1231,12 @@ a {
     margin: 0 auto;
   }
 
-    .nav-dropdown:hover .dropdown-menu {
-    display: none !important;
-    opacity: 0 !important;
-    visibility: hidden !important;
-    pointer-events: none !important;
+  .nav-dropdown:hover .dropdown-menu {
+    display: flex !important;
+    opacity: 1 !important;
+    visibility: visible !important;
   }
-  
+
   .nav-dropdown {
     display: flex;
     position: static;
@@ -1246,9 +1245,20 @@ a {
   .dropdown-trigger {
     display: inline-block;
   }
-
   .dropdown-menu {
-    display: none;
+    position: static;
+    display: flex !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+    transform: none;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    gap: 14px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .nav-links > a,
