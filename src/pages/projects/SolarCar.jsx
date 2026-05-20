@@ -45,8 +45,6 @@ function Header() {
           <div className="dropdown-menu">
             <Link to="/#battery-workforce">Battery Workforce Challenge Project</Link>
             <Link to="/projects/solar-car">McMaster Solar Car Project</Link>
-            <Link to="/#wireless-bms">Capstone Project</Link>
-            <Link to="/#wireless-bms">Side Projects</Link>
           </div>
         </div>
 
