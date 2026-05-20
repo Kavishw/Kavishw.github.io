@@ -1231,6 +1231,13 @@ a {
     margin: 0 auto;
   }
 
+    .nav-dropdown:hover .dropdown-menu {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+  }
+  
   .nav-dropdown {
     display: flex;
     position: static;
