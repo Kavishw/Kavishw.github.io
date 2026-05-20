@@ -101,6 +101,11 @@ a {
   cursor: pointer;
 }
 
+.mobile-menu-toggle,
+.mobile-menu-button {
+  display: none;
+}
+
 .dropdown-menu {
   position: absolute;
   top: 34px;
@@ -1405,6 +1410,17 @@ a {
 
   .project-detail-text h1 {
     font-size: clamp(48px, 15vw, 72px);
+  }
+}
+
+@media (min-width: 701px) {
+  .nav-links {
+    display: flex;
+  }
+
+  .mobile-menu-toggle,
+  .mobile-menu-button {
+    display: none !important;
   }
 }
 
