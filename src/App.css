@@ -1403,3 +1403,8 @@ a {
     font-size: clamp(48px, 15vw, 72px);
   }
 }
+
+.mobile-menu-toggle,
+.mobile-menu-button {
+  display: none;
+}
