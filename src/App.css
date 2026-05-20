@@ -929,7 +929,20 @@ a {
 
 @media (max-width: 700px) {
   .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px 18px;
+    font-size: 13px;
+  }
+
+    .nav-dropdown {
     display: none;
+  }
+
+    .navbar {
+    flex-direction: column;
+    gap: 18px;
   }
 
   .hero {
