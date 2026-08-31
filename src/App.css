@@ -1212,7 +1212,6 @@ a {
     height: 310px;
   }
 }
-
 /* Mobile */
 .mobile-menu-toggle,
 .mobile-menu-button {
@@ -1284,18 +1283,6 @@ a {
   .nav-links > a::after {
     display: none;
   }
-}
-
-@media (min-width: 701px) {
-  .nav-links {
-    display: flex;
-  }
-
-  .mobile-menu-toggle,
-  .mobile-menu-button {
-    display: none !important;
-  }
-}
 
   .nav-dropdown,
   .dropdown-menu,

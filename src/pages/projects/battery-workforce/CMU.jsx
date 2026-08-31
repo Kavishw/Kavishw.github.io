@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+// src/pages/projects/battery-workforce/CMU.jsx
 import Header from "../../../components/Header";
 
 const cmuImages = [

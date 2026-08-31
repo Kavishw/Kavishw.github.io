@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Header from "../../../components/Header";
+import Header from "../components/Header";
 
 
 
@@ -68,8 +68,7 @@ function Publications() {
             </div>
 
             <h2>
-              Dual-Model Edge-to-Cloud SOC Estimation Framework for Wireless
-              Battery Management Systems
+              Edge-Cloud SOC Estimation Approach to Reduce Data Transmission While Maintaining Accuracy
             </h2>
 
             <p className="publication-authors">K. Wadehra, et al.</p>
@@ -79,6 +78,16 @@ function Publications() {
               estimation using wireless battery management hardware, edge
               inference, and cloud-supervised model validation.
             </p>
+            <div className="publication-actions">
+              <a
+                href="hardware/edge-cloud-bms/PCBA%20Boards.html"
+                target="_blank"
+                rel="noreferrer"
+                className="publication-button"
+              >
+                Example Hardware
+              </a>
+            </div>
 
             <div className="tag-row publication-tags">
               <span>Wireless BMS</span>

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import Header from "../../../components/Header";
+// src/pages/projects/SolarCar.jsx
+import Header from "../../components/Header";
 
 const solarCarImages = [
   "/Images/Landing_Page/Im1.png",

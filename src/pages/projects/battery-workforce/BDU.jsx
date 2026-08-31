@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+// src/pages/projects/battery-workforce/BDU.jsx
 import Header from "../../../components/Header";
 
 const bduImages = [
